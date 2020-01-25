@@ -1,0 +1,54 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html5>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+	<title>Dr. B.R. Ambedkar Institute of Technology - Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- <link href="/static/signin.css" rel="stylesheet"> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+	<link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+	<br>
+
+	<div class="container-fluid text-center hed">
+		<h1 class="display-4 text-center">Dr. B.R. Ambedkar Institute of Technology</h1>
+	</div>
+	<hr>
+	<div class="text-center container-fluid">
+		<form class="form-signin" enctype="multipart/form-data" method="post">
+			<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+			{% csrf_token %}
+			{{form | crispy}}
+			<br>
+
+			<button><input type="hidden"><a class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Sign
+					in</a></input></button>
+			<hr>
+			<div class="text-center">
+				<div class="text-left">
+					<p class="font-weight-light">Don’t have an account?</p>
+					<input type="hidden"><a href="/accounts/register/" class="btn btn-primary active" role="button"
+						aria-pressed="true">Sign up</a></input>
+				</div>
+				<div class="text-right">
+					<p class="font-weight-light">Forgot your password?</p>
+					<input type="hidden"><a href="/accounts/password/reset/" class="btn btn-primary active"
+						role="button" aria-pressed="true">Reset Password</a></input>
+				</div>
+				<div>
+		</form>
+	</div>
+</body>
+
+</html>

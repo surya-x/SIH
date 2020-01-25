@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+    <title>Dr. B.R. Ambedkar Institute of Technology - Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% if user.is_authenticated %}
+        <h3>You are currently logged in</h3>
+        <button><a href="accoutns/logout">Logout</a></button>
+    {% else %}
+        <h3>You are currently logged in</h3>
+        <button><a href="../login">Login</a></button>
+    {% endif %}
+</body>
+</html>

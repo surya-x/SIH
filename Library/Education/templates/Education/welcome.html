@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+    <title>Dr. B.R. Ambedkar Institute of Technology - Library</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    {% if user.is_authenticated %}
+    <button><a href="Education/home">As a Student</a></button>
+    {% else %}
+    <button><a href="accounts/login">As a Student</a></button>
+    {% endif %}
+    <button><a href="admin/">As a Administrator</a></button>
+</body>
+
+</html>

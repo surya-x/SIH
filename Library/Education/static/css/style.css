@@ -1,0 +1,92 @@
+*{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0%;
+    padding-bottom: 0%;
+  }
+  
+  .abbc{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+  }
+
+@media (min-width: 1200px){
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+}
+
+.grid-item {
+  margin-bottom: 2em;
+  padding-left: 0.5em;
+}
+
+  .d-inline-block {
+  text-decoration-color: grey;
+  text-decoration-style: solid;
+  }
+  p.card-text{
+   margin-bottom: 0px; 
+  }
+  .nav-link:hover{
+    text-decoration: underline;
+  }
+  
+  .jumbotron{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM3dSLn2qtpN3crmFQIDpyjjChSeU1djhqzH0P4-8wphGSuM59Wg);
+    background-size : cover;
+    color :black;
+    font-family: sans-serif;
+  }
+  
+  h5.card-title{
+    font-weight: bold;
+    text-decoration: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #5a5a5a;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-body{
+    padding: 0px;
+    border: 0px;
+  }
+  *{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0%;
+    padding-bottom: 0%;
+  }
+  
+
+  body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #5a5a5a;
+  }
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }
+  .hed{
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(219, 219, 219) solid;
+    /* border-radius: 5px; */
+    box-shadow: black;
+  }
+  h5{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+    <title>Dr. B.R. Ambedkar Institute of Technology - Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <section class="section section_discover">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6 container-fluid" >
+                    <img class="img-fluid" src="/media/{{book.pic}}" />
+                </div>
+                
+                <div class="col-md-6 align-self-start">
+                    <h1 class="display-5">Book Detail</h1>
+                    <h6><b>Books Title</b> -> {{book.title}}</h6>
+                    <h6><b>Genre</b> -> {{book.genre}}</p>
+                    <h6><b>Pages</b> -> {{book.pages}}</p>
+                    <h6><b>Author</b> -> {{book.author}}</p>
+                    <h6><b>Copies Available</b> -> {{book.copies}}</p>
+                    <h6><b>Position in Rack</b> -> {{book.rack_no}}</p>
+                    <h6 class="text-break"><b>Description</b>{{book.description}}</p>
+                        <!-- {% if book.copies %}
+                    <a><button class="btn btn-outline-primary btn-md">Get this book issues</button></a>
+                        {% endif %} -->
+                    <a href="../home"><button class="btn btn-outline-secondary btn-md">Back</button></a>
+                    <a href="../home"><button class="btn btn-outline-secondary btn-md">Issue</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
