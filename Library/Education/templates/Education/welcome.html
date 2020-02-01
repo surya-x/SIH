@@ -1,23 +1,34 @@
 {% load static %}
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static '/welcome.css' %}">
     <link rel="icon" type="image/png" href="{% static 'images/logo1.png' %}" />
     <title>Dr. B.R. Ambedkar Institute of Technology - Library</title>
 </head>
 
-<body>
-    <h1>Welcome</h1>
-    {% if user.is_authenticated %}
-    <button><a href="Education/home">As a Student</a></button>
-    {% else %}
-    <button><a href="accounts/login">As a Student</a></button>
-    {% endif %}
-    <button><a href="admin/">As a Administrator</a></button>
+<body>    
+    <!-- <img src="img/banner.jpg" alt=""> -->
+    <div class="showcase">        
+        <div class="showcase-top">
+            <!-- <h1>L i b r a r y&nbsp;&nbsp;&nbsp;M a n a g e m e n t&nbsp;&nbsp;&nbsp;S y s t e m</h1> -->
+            <h1>D R.&nbsp;&nbsp;B R&nbsp;&nbsp;A M B E D K A R&nbsp;&nbsp;<br>I N S T I T U T E&nbsp;&nbsp;O F&nbsp;&nbsp;T E C H N O L O G Y</h1>
+            <h2>O N L I N E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L I B R A R Y</h2>
+        </div>
+        <div class="showcase-mid">
+            <div class="btn"><a href="Edu/home">
+                LOGIN AS STUDENT</a>
+            </div>
+            <div class="btn"><a href="admin/">
+                LOGIN AS ADMINISTRATOR</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
+
