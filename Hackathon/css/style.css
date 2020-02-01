@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-attachment: fixed; */
+}
+
+/* navigation bar */
+nav {
+    position: fixed;
+    white-space: nowrap;
+    color: white;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 8vh;
+    z-index: 1;
+}
+.nav-top {
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 1vh;
+}
+
+/* body code */
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;    
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-blend-mode: hue;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.580);
+    box-shadow: inset 60px 50px 100px #000000, inset -60px -50px 100px #000000;
+}
+
+.showcase-top {
+    z-index: 1;
+    position: absolute;
+    color: greenyellow;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.showcase-top h1 {
+    font-size: 4rem;
+}
+
+.showcase-top h2 {
+    color: rgb(50, 115, 255);
+    margin-top: 7vh;
+    font-size: 3rem;
+}
+
+.showcase-mid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 65vh;
+    font-size: 1rem;
+    /* padding-left: 35vw; */
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+
+/* buttons */
+.btn {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-left: 10rem;
+    font-size: 1.2rem;
+    /* background-color: blue; */
+    margin-right: 10rem;
+    border: 2px white solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    /* font-weight: 500; */
+    background-color: blueviolet;
+}
