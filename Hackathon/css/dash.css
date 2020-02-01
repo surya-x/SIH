@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    white-space: nowrap;
+}
+
+img {
+    width: 60%;
+}
+
+.showcase {
+    margin-left: 5%;
+    margin-top: 2%;
+    position: absolute;
+    height: 85vh;
+    border-radius: 2rem;
+    background: rgb(230, 230, 230);
+    width: 90%;
+}
+
+.image {
+    position: absolute;
+    width: 45%;
+    padding-top: 6%;
+    padding-left: 8%;
+}
+
+.info {
+    width: 50%;
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 40%;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 7%;
+}
+
+.info p {
+    padding-top: 5%;
+    font-size: 1.5rem;
+}
+
+.btn {
+    margin-top: 38%;
+    margin-left: 55%;
+    position: absolute;
+}
