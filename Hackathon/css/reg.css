@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body code */
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    white-space: nowrap;
+}
+
+.container-fluid {
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin-top: 3%;
+    height: 80vh;
+    /* background-color: aqua; */
+    background: rgb(240, 240, 240);
+    border-radius: 2rem;
+    padding-bottom: 1%;
+}
+
+.con-1 {
+    padding-top: 3%;
+    font-size: 1.2rem;
+}
+
+.text-right {
+    margin-top: 2%;
+}
