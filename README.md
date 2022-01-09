@@ -13,5 +13,6 @@ Our Team has designed an automated Library Management System for Ambedkar Instit
 - Nimesh Srivastava
 - Akshat Goyal
 - Vaibhav Joshi
+- Shruti Jha
 
 ---
